@@ -1,0 +1,44 @@
+{
+    "name": "ahmetbedir/laravel-estpos",
+    "type": "package",
+    "description": "EST Uyumlu Bankalar İçin Laravel SanalPos Paketi",
+    "keywords": ["sanal", "pos", "est"],
+    "require": {
+        "php":">=5.5.0",
+        "ext-dom": "*",
+        "ext-json": "*",
+        "ext-mcrypt": "*",
+        "ext-SimpleXML": "*",
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/http-foundation": "^4.1",
+        "illuminate/config": "~5.7|~5.8|^6.0",
+        "symfony/serializer": "4.3.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ahmetbedir",
+            "email": "ahmet.bedir1@ogr.dpu.edu.tr",
+            "homepage": "https://github.com/ahmetbedir",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AhmetBedir\\LaravelEstPos\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AhmetBedir\\LaravelEstPos\\LaravelEstPosServiceProvider"
+            ],
+            "aliases": {
+                "EstPos": "AhmetBedir\\LaravelEstPos\\Facades\\EstPos"
+            }
+        }
+    }
+}
