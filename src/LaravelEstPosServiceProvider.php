@@ -8,15 +8,13 @@ class LaravelEstPosServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        // Config file publishes
         $this->publishConfig();
     }
 
     public function register()
     {
         $this->app->singleton('estpos', function ($app) {
-            $configRepository = $app['Illuminate\Config\Repository'];
-            return new \AhmetBedir\LaravelEstPos\EstPos($configRepository);
+            return new \AhmetBedir\LaravelEstPos\EstPos($app['Illuminate\Config\Repository']);
         });
 
         // Merge Config

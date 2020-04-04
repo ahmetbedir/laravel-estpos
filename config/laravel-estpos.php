@@ -1,5 +1,7 @@
 <?php
 
+use ;
+
 return [
     'currencies' => [
         'TRY' => 949,
@@ -24,6 +26,7 @@ return [
     'banks' => [
         'akbank' => [
             'name' => 'AKBANK T.A.S.',
+            'class' => AhmetBedir\LaravelEstPos\EstPos::class,
             'urls' => [
                 'production' => 'https://www.sanalakpos.com/fim/api',
                 'test' => 'https://entegrasyon.asseco-see.com.tr/fim/api',
