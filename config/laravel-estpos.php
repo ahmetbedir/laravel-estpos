@@ -1,7 +1,5 @@
 <?php
 
-use ;
-
 return [
     'currencies' => [
         'TRY' => 949,
