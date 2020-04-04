@@ -7,11 +7,10 @@
         "php":">=5.5.0",
         "ext-dom": "*",
         "ext-json": "*",
-        "ext-mcrypt": "*",
         "ext-SimpleXML": "*",
         "guzzlehttp/guzzle": "^6.3",
-        "symfony/http-foundation": "^4.1",
-        "illuminate/config": "~5.7|~5.8|^6.0",
+        "symfony/http-foundation": "^5.0",
+        "illuminate/config": "~5.7|~5.8|^6.0|^7.0",
         "symfony/serializer": "4.3.*"
     },
     "license": "MIT",
@@ -40,5 +39,10 @@
                 "EstPos": "AhmetBedir\\LaravelEstPos\\Facades\\EstPos"
             }
         }
-    }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
